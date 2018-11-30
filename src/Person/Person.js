@@ -1,7 +1,12 @@
-import React from 'react';
+import React from 'react'
+import './Person.scss';
 
-const person = () => {
-  return <h3>Person component</h3>
+const person = (props) => {
+  return (
+    <div className="Person">
+      <h3>Person component { props.name }</h3>
+    </div>
+  )
 };
 
 export default person;
